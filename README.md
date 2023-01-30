@@ -19,3 +19,14 @@ $ rustup update
 To uninstall Rust and rustup, use the command:
 
 $ rustup self uninstall
+
+To write your first lines of code, create a file with the .rs extension. In your IDE:
+
+fn main() {
+printlin!("Hello world")
+}
+
+in your CLI, write the command:
+
+rustc main.rs
+./main
