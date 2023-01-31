@@ -1,9 +1,6 @@
 use std::io;
-//standard input library
 use std::cmp::Ordering;
 use rand::Rng;
-// defines traits that random number generators implement, and this trait must be in scope for us to use those methods
-
 
 fn main() {
     println!("Guess the number!");
