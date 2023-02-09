@@ -1,3 +1,4 @@
+#[derive(Debug)]
 struct User {
     active: bool,
     name: String,
@@ -21,10 +22,10 @@ fn main() {
     // };
 
     // lesser code
-    let user2 = User {
-        sign_in_count: 1,
-        ..user1
-    };
+    // let user2 = User {
+    //     sign_in_count: 1,
+    //     ..user1
+    // };
 
-    println!("{}", user2.name);
+    println!("{:#?}", user1);
 }
