@@ -26,4 +26,7 @@ FUNCTIONS.
 Functions are used to store lines of code which will then be called in the main function. For example, an arithmetic expression can be written in a function called add, and then the add function gets called in the main function to be executed. Functions can have parameters and the data type has to be declared to function properly. In a case where a value or sets of values are to be returned the data type also has to be inputted ( -> i32, &str).
 
 EXPRESSIONS.
-Expressions are used to compared conditions and print out a statement if one of the conditions is met
+Expressions are used to compared conditions and print out a statement if one of the conditions is met.
+
+STRUCTS.
+Structs(short for structures) are used to group set of values together, which can be of different data types into a single and meaningful group. Structs can also be used as tuple structs or without any fields.
