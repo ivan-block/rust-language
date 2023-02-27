@@ -1,11 +1,12 @@
 pub fn run() {
     let mut vector: Vec<i32> = vec![1, 2, 3, 4, 5];
+    println!("Vector is {:?}", vector);
 
     // To change a value inside the array
     vector[2] = 20;
 
     // Get single value
-    println!("{:?}", vector[2]);
+    println!("{}", vector[2]);
 
     // Get array length
     println!("{}", vector.len());
@@ -31,6 +32,4 @@ pub fn run() {
     for x in vector.iter_mut() {
         *x = *x * 2;
     }
-
-    println!("Vector is {:?}", vector);
 }
