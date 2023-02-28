@@ -30,3 +30,9 @@ Expressions are used to compared conditions and print out a statement if one of 
 
 STRUCTS.
 Structs(short for structures) are used to group set of values together, which can be of different data types into a single and meaningful group. Structs can also be used as tuple structs or without any fields.
+
+METHOD SYNTAX.
+Methods is similar to functions, but unlike functions, it is defined within the context of a struct(or an enum or the trait of an object), and has parameters, but the parameter always starts with self because it is relating to the struct that was defined before it or is being called on. Point to note is the Rust allows you to use the self tag without the type Self which is abbreviated and allowed in the first parameter spot, and also note that the & is used because it is borrowing fron the instance of the struct.
+
+ENUMS.
+Enums(Short for enumerations) helps you define a type by enumerating its possible variants (a possible set of values). One way to define an enum is using the Option, which expresses that a value can either be something or nothing. You can put any type of data in an enum, for example, strings, integers and even structs. An enum can also be in an enum.

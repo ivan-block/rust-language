@@ -1,34 +1,31 @@
-struct Colour {
-    red: u8,
-    green: u8,
-    blue: u8
-}
-#[deriv(Debug)]
-struct User {
-    username: String,
-    email: String,
-    sign_in_count: u8
+// struct Colour {
+//     red: u8,
+//     green: u8,
+//     blue: u8
+// }
+#[derive(Debug)]
+struct Rectangle {
+    length: u64,
+    width: u64
 }
 
-fn build_user(email: String, username: String) -> User {
-    username,
-    email,
-    sign_in_count: 1
+fn area(area: Rectangle) -> u64 {
+    area.length * area.width
 }
 
 pub fn run() {
-    let mut c = Colour {
-        red: 255,
-        green: 0,
-        blue: 0
+    // let c = Colour {
+    //     red: 255,
+    //     green: 0,
+    //     blue: 0
+    // };
+    // println!("Colour is: {} {} {}", c.red, c.green, c.blue);
+    let scale = 2;
+    let area1 = Rectangle {
+        length: dbg!(30 * scale),
+        width: 30
     };
+    dbg!(area1);
+    // println!("The area of the rectangle is {:?}", area(area1));
 
-    println!("Colour is: {} {} {}", c.red, c.green, c.blue);
-
-    let user1 = build_user (
-        String::from("ivanagwuye@gmail.com"),
-        String::from("ivanagwuye")
-    );
-
-    println!("My username is {:?}", user1);
 }

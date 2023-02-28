@@ -6,9 +6,12 @@
 // mod vectors;
 // mod loops;
 // mod functions;
-mod structs;
+// mod structs;
 // mod shadowing;
 // mod conditionals;
+// mod method;
+// mod enums;
+mod matching;
 
 fn main() {
     // print::run();
@@ -19,7 +22,10 @@ fn main() {
     // vectors::run();
     // loops::run();
     // functions::run();
-    structs::run();
+    // structs::run();
     // shadowing::run();
     // conditionals::run();
+    // method::run();
+    // enums::run();
+    matching::run();
 }
